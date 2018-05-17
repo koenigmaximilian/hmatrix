@@ -139,7 +139,7 @@ library
         if flag(openblas)
             if !flag(disable-default-paths)
                 extra-lib-dirs:     /usr/lib/openblas/lib
-            extra-libraries:    cublas
+            extra-libraries:    nvblas openblas
         else
             extra-libraries:    blas lapack
 
