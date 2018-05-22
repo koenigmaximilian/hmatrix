@@ -120,7 +120,7 @@ library
         if flag(openblas)
             if !flag(disable-default-paths)
                 extra-lib-dirs:     /usr/local/lib/openblas/lib
-            extra-libraries:    openblas
+            extra-libraries:    magmalib
         else
             extra-libraries:    blas lapack
 
@@ -139,7 +139,7 @@ library
         if flag(openblas)
             if !flag(disable-default-paths)
                 extra-lib-dirs:     /usr/lib/openblas/lib
-            extra-libraries:    magma
+            extra-libraries:    magmalib
         else
             extra-libraries:    blas lapack
 
