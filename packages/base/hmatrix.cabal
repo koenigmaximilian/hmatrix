@@ -120,7 +120,7 @@ library
         if flag(openblas)
             if !flag(disable-default-paths)
                 extra-lib-dirs:     /usr/local/lib/openblas/lib
-            extra-libraries:    nvblas openblas
+            extra-libraries:    openblas
         else
             extra-libraries:    blas lapack
 
@@ -139,7 +139,7 @@ library
         if flag(openblas)
             if !flag(disable-default-paths)
                 extra-lib-dirs:     /usr/lib/openblas/lib
-            extra-libraries:    nvblas openblas
+            extra-libraries:    nvblas mkl_intel mkl_sequential mkl_core
         else
             extra-libraries:    blas lapack
 
