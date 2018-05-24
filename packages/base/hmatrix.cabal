@@ -140,7 +140,7 @@ library
             if !flag(disable-default-paths)
                 extra-lib-dirs:     /usr/lib/openblas/lib
             extra-libraries:    magma
-            extra-lib-dirs: ~/Projects/nix-build-magma-2.3.0.drv-2/lib
+            extra-lib-dirs: /home/maximilian/Projects/nix-build-magma-2.3.0.drv-2/magma-2.3.0/lib
         else
             extra-libraries:    blas lapack
 
